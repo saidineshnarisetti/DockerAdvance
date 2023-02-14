@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<test name="Chrome testing">
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="remoteTestingDocker.DockerValidation.LaunchBrowser"/>
+      <class name="remoteTestingDocker.DockerValidation.Googlepage"/>
+      <class name="remoteTestingDocker.DockerValidation.AppTest"/>
+    </classes>
+  </test>  
+ <test name="FireFox testing">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="remoteTestingDocker.DockerValidation.LaunchBrowser"/>
+      <class name="remoteTestingDocker.DockerValidation.Googlepage"/>
+      <class name="remoteTestingDocker.DockerValidation.AppTest"/>
+    </classes>
+  </test> 
+  <test name="Edge testing">
+  <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="remoteTestingDocker.DockerValidation.LaunchBrowser"/>
+      <class name="remoteTestingDocker.DockerValidation.Googlepage"/>
+      <class name="remoteTestingDocker.DockerValidation.AppTest"/>
+    </classes>
+  </test>  
+</suite> <!-- Suite -->
