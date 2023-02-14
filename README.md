@@ -34,10 +34,10 @@ http://localhost:4444/ui#/sessions
 TestNG Report: 
 <img width="1149" alt="Screenshot 2023-02-13 at 5 35 22 PM" src="https://user-images.githubusercontent.com/19299232/218648498-f66b0d1c-001e-4554-bf4e-769ee8d91a11.png">
 
-
+docker-compose -f docker-compose-hubNode.yml down  
 <img width="1775" alt="Screenshot 2023-02-14 at 10 18 25 AM" src="https://user-images.githubusercontent.com/19299232/218648529-7f6a44f5-e17e-45d7-9836-58eb759c9b44.png">
 
 
+docker ps 
 <img width="1776" alt="Screenshot 2023-02-14 at 10 18 48 AM" src="https://user-images.githubusercontent.com/19299232/218648550-b5217deb-222f-4530-b967-326563f2d41d.png">
 
-TestNG Report: 

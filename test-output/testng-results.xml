@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-13T19:19:13 IST" name="Suite" finished-at="2023-02-13T19:19:29 IST" duration-ms="16638">
+  <suite name="Suite" duration-ms="23768" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:28 IST">
     <groups>
     </groups>
-    <test started-at="2023-02-13T19:19:13 IST" name="Edge testing" finished-at="2023-02-13T19:19:27 IST" duration-ms="14727">
+    <test name="Edge testing" duration-ms="23706" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:28 IST">
       <class name="remoteTestingDocker.DockerValidation.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@318ba8c8]" started-at="2023-02-13T19:19:13 IST" name="shouldAnswerWithTrue" finished-at="2023-02-13T19:19:13 IST" duration-ms="10" status="PASS">
+        <test-method status="PASS" signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@37374a5e]" name="shouldAnswerWithTrue" duration-ms="11" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- remoteTestingDocker.DockerValidation.AppTest -->
       <class name="remoteTestingDocker.DockerValidation.Googlepage">
-        <test-method is-config="true" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@54c562f7]" started-at="2023-02-13T19:19:13 IST" name="opendriver" finished-at="2023-02-13T19:19:16 IST" duration-ms="3867" status="PASS">
+        <test-method status="PASS" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@8646db9]" name="opendriver" is-config="true" duration-ms="7920" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:13 IST">
           <params>
             <param index="0">
               <value>
@@ -24,54 +24,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@54c562f7]" started-at="2023-02-13T19:19:16 IST" name="verifygooglepage" finished-at="2023-02-13T19:19:22 IST" duration-ms="5145" status="PASS">
+        <test-method status="PASS" signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@8646db9]" name="verifygooglepage" duration-ms="9739" started-at="2023-05-30T15:59:13 IST" finished-at="2023-05-30T15:59:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifygooglepage -->
-        <test-method signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@54c562f7]" started-at="2023-02-13T19:19:22 IST" name="verifyfacebookpage" finished-at="2023-02-13T19:19:27 IST" duration-ms="5655" status="PASS">
+        <test-method status="PASS" signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@8646db9]" name="verifyfacebookpage" duration-ms="5982" started-at="2023-05-30T15:59:22 IST" finished-at="2023-05-30T15:59:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyfacebookpage -->
       </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
     </test> <!-- Edge testing -->
-    <test started-at="2023-02-13T19:19:13 IST" name="Chrome testing" finished-at="2023-02-13T19:19:27 IST" duration-ms="14727">
+    <test name="FireFox testing" duration-ms="23768" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:28 IST">
       <class name="remoteTestingDocker.DockerValidation.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@2133814f]" started-at="2023-02-13T19:19:13 IST" name="shouldAnswerWithTrue" finished-at="2023-02-13T19:19:13 IST" duration-ms="10" status="PASS">
+        <test-method status="PASS" signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@74ad1f1f]" name="shouldAnswerWithTrue" duration-ms="11" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- remoteTestingDocker.DockerValidation.AppTest -->
       <class name="remoteTestingDocker.DockerValidation.Googlepage">
-        <test-method is-config="true" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@70be0a2b]" started-at="2023-02-13T19:19:13 IST" name="opendriver" finished-at="2023-02-13T19:19:16 IST" duration-ms="3199" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- opendriver -->
-        <test-method signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@70be0a2b]" started-at="2023-02-13T19:19:16 IST" name="verifygooglepage" finished-at="2023-02-13T19:19:22 IST" duration-ms="5764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifygooglepage -->
-        <test-method signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@70be0a2b]" started-at="2023-02-13T19:19:22 IST" name="verifyfacebookpage" finished-at="2023-02-13T19:19:27 IST" duration-ms="5702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyfacebookpage -->
-      </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
-    </test> <!-- Chrome testing -->
-    <test started-at="2023-02-13T19:19:13 IST" name="FireFox testing" finished-at="2023-02-13T19:19:29 IST" duration-ms="16638">
-      <class name="remoteTestingDocker.DockerValidation.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@56a6d5a6]" started-at="2023-02-13T19:19:13 IST" name="shouldAnswerWithTrue" finished-at="2023-02-13T19:19:13 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldAnswerWithTrue -->
-      </class> <!-- remoteTestingDocker.DockerValidation.AppTest -->
-      <class name="remoteTestingDocker.DockerValidation.Googlepage">
-        <test-method is-config="true" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@309e345f]" started-at="2023-02-13T19:19:13 IST" name="opendriver" finished-at="2023-02-13T19:19:22 IST" duration-ms="9351" status="PASS">
+        <test-method status="PASS" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@491cc5c9]" name="opendriver" is-config="true" duration-ms="14422" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:19 IST">
           <params>
             <param index="0">
               <value>
@@ -82,54 +53,44 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@309e345f]" started-at="2023-02-13T19:19:22 IST" name="verifygooglepage" finished-at="2023-02-13T19:19:27 IST" duration-ms="5178" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Google] but found [Facebook – log in or sign up]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Google] but found [Facebook – log in or sign up]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at remoteTestingDocker.DockerValidation.Googlepage.verifygooglepage(Googlepage.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@491cc5c9]" name="verifygooglepage" duration-ms="3261" started-at="2023-05-30T15:59:19 IST" finished-at="2023-05-30T15:59:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifygooglepage -->
-        <test-method signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@309e345f]" started-at="2023-02-13T19:19:27 IST" name="verifyfacebookpage" finished-at="2023-02-13T19:19:29 IST" duration-ms="2044" status="PASS">
+        <test-method status="PASS" signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@491cc5c9]" name="verifyfacebookpage" duration-ms="6021" started-at="2023-05-30T15:59:22 IST" finished-at="2023-05-30T15:59:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyfacebookpage -->
       </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
     </test> <!-- FireFox testing -->
+    <test name="Chrome testing" duration-ms="23742" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:28 IST">
+      <class name="remoteTestingDocker.DockerValidation.AppTest">
+        <test-method status="PASS" signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@7ce6a65d]" name="shouldAnswerWithTrue" duration-ms="10" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- remoteTestingDocker.DockerValidation.AppTest -->
+      <class name="remoteTestingDocker.DockerValidation.Googlepage">
+        <test-method status="PASS" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@4abdb505]" name="opendriver" is-config="true" duration-ms="7920" started-at="2023-05-30T15:59:05 IST" finished-at="2023-05-30T15:59:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opendriver -->
+        <test-method status="PASS" signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@4abdb505]" name="verifygooglepage" duration-ms="9502" started-at="2023-05-30T15:59:13 IST" finished-at="2023-05-30T15:59:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifygooglepage -->
+        <test-method status="PASS" signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@4abdb505]" name="verifyfacebookpage" duration-ms="6254" started-at="2023-05-30T15:59:22 IST" finished-at="2023-05-30T15:59:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyfacebookpage -->
+      </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
+    </test> <!-- Chrome testing -->
   </suite> <!-- Suite -->
 </testng-results>

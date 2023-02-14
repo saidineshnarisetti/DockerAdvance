@@ -43,6 +43,6 @@ public class LaunchBrowser {
 	} 
   @AfterClass
   public void terminateBrowser(){
-      driver.close();			///Clowsing browser
+      driver.close();			///Closing browser
 	}
 }
