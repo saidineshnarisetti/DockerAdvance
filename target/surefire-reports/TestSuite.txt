@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.883 s - in TestSuite
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 244.626 s <<< FAILURE! - in TestSuite
+remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage  Time elapsed: 4.53 s  <<< FAILURE!
+java.lang.AssertionError: expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]
+	at remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage(Googlepage.java:21)
+
+remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage  Time elapsed: 4.53 s  <<< FAILURE!
+java.lang.AssertionError: expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]
+	at remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage(Googlepage.java:21)
+
+remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage  Time elapsed: 5.955 s  <<< FAILURE!
+java.lang.AssertionError: expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]
+	at remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage(Googlepage.java:21)
+

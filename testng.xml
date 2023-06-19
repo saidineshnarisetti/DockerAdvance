@@ -17,12 +17,12 @@
       <class name="remoteTestingDocker.DockerValidation.AppTest"/>
     </classes>
   </test> 
-<!-- <test name="Edge testing">
+<test name="Edge testing">
   <parameter name="browser" value="Edge"/>
     <classes>
       <class name="remoteTestingDocker.DockerValidation.LaunchBrowser"/>
       <class name="remoteTestingDocker.DockerValidation.Googlepage"/>
       <class name="remoteTestingDocker.DockerValidation.AppTest"/>
     </classes>
-  </test>  --> 
+  </test>
 </suite> <!-- Suite -->

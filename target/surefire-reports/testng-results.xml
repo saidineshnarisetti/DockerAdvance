@@ -1,19 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-19T16:46:50 IST" name="Suite" finished-at="2023-06-19T16:47:15 IST" duration-ms="25293">
+  <suite started-at="2023-06-20T11:48:10 IST" name="Suite" finished-at="2023-06-20T11:52:09 IST" duration-ms="239199">
     <groups>
     </groups>
-    <test started-at="2023-06-19T16:46:50 IST" name="Chrome testing" finished-at="2023-06-19T16:47:11 IST" duration-ms="21171">
+    <test started-at="2023-06-20T11:48:10 IST" name="Edge testing" finished-at="2023-06-20T11:52:08 IST" duration-ms="237738">
       <class name="remoteTestingDocker.DockerValidation.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@b7f23d9]" started-at="2023-06-19T16:46:50 IST" name="shouldAnswerWithTrue" finished-at="2023-06-19T16:46:50 IST" duration-ms="7" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@45f45fa1]" started-at="2023-06-20T11:48:10 IST" name="shouldAnswerWithTrue" finished-at="2023-06-20T11:48:10 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- remoteTestingDocker.DockerValidation.AppTest -->
       <class name="remoteTestingDocker.DockerValidation.Googlepage">
-        <test-method is-config="true" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@58c1c010]" started-at="2023-06-19T16:46:50 IST" name="opendriver" finished-at="2023-06-19T16:46:57 IST" duration-ms="7017" status="PASS">
+        <test-method is-config="true" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@589b3632]" started-at="2023-06-20T11:48:10 IST" name="opendriver" finished-at="2023-06-20T11:51:52 IST" duration-ms="221790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opendriver -->
+        <test-method signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@589b3632]" started-at="2023-06-20T11:51:52 IST" name="verifygooglepage" finished-at="2023-06-20T11:52:01 IST" duration-ms="8650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifygooglepage -->
+        <test-method signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@589b3632]" started-at="2023-06-20T11:52:01 IST" name="verifyfacebookpage" finished-at="2023-06-20T11:52:08 IST" depends-on-methods="remoteTestingDocker.DockerValidation.Googlepage.verifygooglepage" duration-ms="7267" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage(Googlepage.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyfacebookpage -->
+      </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
+    </test> <!-- Edge testing -->
+    <test started-at="2023-06-20T11:48:10 IST" name="Chrome testing" finished-at="2023-06-20T11:52:08 IST" duration-ms="237731">
+      <class name="remoteTestingDocker.DockerValidation.AppTest">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@4d339552]" started-at="2023-06-20T11:48:10 IST" name="shouldAnswerWithTrue" finished-at="2023-06-20T11:48:10 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- remoteTestingDocker.DockerValidation.AppTest -->
+      <class name="remoteTestingDocker.DockerValidation.Googlepage">
+        <test-method is-config="true" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@3f200884]" started-at="2023-06-20T11:48:10 IST" name="opendriver" finished-at="2023-06-20T11:51:52 IST" duration-ms="221382" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,25 +92,64 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@58c1c010]" started-at="2023-06-19T16:46:57 IST" name="verifygooglepage" finished-at="2023-06-19T16:47:07 IST" duration-ms="10527" status="PASS">
+        <test-method signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@3f200884]" started-at="2023-06-20T11:51:52 IST" name="verifygooglepage" finished-at="2023-06-20T11:52:01 IST" duration-ms="9040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifygooglepage -->
-        <test-method signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@58c1c010]" started-at="2023-06-19T16:47:07 IST" name="verifyfacebookpage" finished-at="2023-06-19T16:47:11 IST" duration-ms="3573" status="PASS">
+        <test-method signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@3f200884]" started-at="2023-06-20T11:52:01 IST" name="verifyfacebookpage" finished-at="2023-06-20T11:52:08 IST" depends-on-methods="remoteTestingDocker.DockerValidation.Googlepage.verifygooglepage" duration-ms="7263" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage(Googlepage.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyfacebookpage -->
       </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
     </test> <!-- Chrome testing -->
-    <test started-at="2023-06-19T16:46:50 IST" name="FireFox testing" finished-at="2023-06-19T16:47:15 IST" duration-ms="25293">
+    <test started-at="2023-06-20T11:48:10 IST" name="FireFox testing" finished-at="2023-06-20T11:52:09 IST" duration-ms="239199">
       <class name="remoteTestingDocker.DockerValidation.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@145eaa29]" started-at="2023-06-19T16:46:50 IST" name="shouldAnswerWithTrue" finished-at="2023-06-19T16:46:50 IST" duration-ms="7" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:remoteTestingDocker.DockerValidation.AppTest@1e67a849]" started-at="2023-06-20T11:48:10 IST" name="shouldAnswerWithTrue" finished-at="2023-06-20T11:48:10 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- remoteTestingDocker.DockerValidation.AppTest -->
       <class name="remoteTestingDocker.DockerValidation.Googlepage">
-        <test-method is-config="true" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@6328d34a]" started-at="2023-06-19T16:46:50 IST" name="opendriver" finished-at="2023-06-19T16:47:04 IST" duration-ms="14453" status="PASS">
+        <test-method is-config="true" signature="opendriver(java.lang.String)[pri:0, instance:remoteTestingDocker.DockerValidation.Googlepage@41ee392b]" started-at="2023-06-20T11:48:10 IST" name="opendriver" finished-at="2023-06-20T11:51:56 IST" duration-ms="226101" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,11 +160,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendriver -->
-        <test-method signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@6328d34a]" started-at="2023-06-19T16:47:04 IST" name="verifygooglepage" finished-at="2023-06-19T16:47:13 IST" duration-ms="8543" status="PASS">
+        <test-method signature="verifygooglepage()[pri:1, instance:remoteTestingDocker.DockerValidation.Googlepage@41ee392b]" started-at="2023-06-20T11:51:56 IST" name="verifygooglepage" finished-at="2023-06-20T11:52:03 IST" duration-ms="7110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifygooglepage -->
-        <test-method signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@6328d34a]" started-at="2023-06-19T16:47:13 IST" name="verifyfacebookpage" finished-at="2023-06-19T16:47:15 IST" duration-ms="2246" status="PASS">
+        <test-method signature="verifyfacebookpage()[pri:2, instance:remoteTestingDocker.DockerValidation.Googlepage@41ee392b]" started-at="2023-06-20T11:52:03 IST" name="verifyfacebookpage" finished-at="2023-06-20T11:52:09 IST" depends-on-methods="remoteTestingDocker.DockerValidation.Googlepage.verifygooglepage" duration-ms="5956" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage(Googlepage.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyfacebookpage -->

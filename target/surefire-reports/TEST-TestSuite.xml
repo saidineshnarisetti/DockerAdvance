@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="30.883" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="244.626" tests="9" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.specification.version" value="16"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Users/saidinesh/Library/Java/JavaVirtualMachines/openjdk-16.0.1/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/saidinesh/eclipse-workspace/DockerValidation/Dockerbasics-main/target/surefire/surefirebooter18032941252316348503.jar /Users/saidinesh/eclipse-workspace/DockerValidation/Dockerbasics-main/target/surefire 2023-06-19T16-46-48_875-jvmRun1 surefire13246844362421877597tmp surefire_012006784424998465551tmp"/>
+    <property name="sun.java.command" value="/Users/saidinesh/eclipse-workspace/DockerValidation/Dockerbasics-main/target/surefire/surefirebooter5952303289822140539.jar /Users/saidinesh/eclipse-workspace/DockerValidation/Dockerbasics-main/target/surefire 2023-06-20T11-48-09_850-jvmRun1 surefire7574851339546179622tmp surefire_08049498186425648937tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/saidinesh/eclipse-workspace/DockerValidation/Dockerbasics-main/target/test-classes:/Users/saidinesh/eclipse-workspace/DockerValidation/Dockerbasics-main/target/classes:/Users/saidinesh/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/saidinesh/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/saidinesh/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/saidinesh/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/saidinesh/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/saidinesh/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/saidinesh/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/saidinesh/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/saidinesh/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/saidinesh/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/saidinesh/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/saidinesh/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/saidinesh/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/saidinesh/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/saidinesh/.m2/repository/com/beust/jcommander/1.81/jcommander-1.81.jar:/Users/saidinesh/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/saidinesh/eclipse-workspace/DockerValidation/Dockerbasics-main/target/surefire/surefirebooter18032941252316348503.jar"/>
+    <property name="surefire.real.class.path" value="/Users/saidinesh/eclipse-workspace/DockerValidation/Dockerbasics-main/target/surefire/surefirebooter5952303289822140539.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="16.0.1+9-24"/>
@@ -54,10 +54,25 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="remoteTestingDocker.DockerValidation.AppTest" time="0.008"/>
-  <testcase name="shouldAnswerWithTrue" classname="remoteTestingDocker.DockerValidation.AppTest" time="0.009"/>
-  <testcase name="verifygooglepage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="3.093"/>
-  <testcase name="verifygooglepage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="5.448"/>
-  <testcase name="verifyfacebookpage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="3.573"/>
-  <testcase name="verifyfacebookpage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="2.246"/>
+  <testcase name="shouldAnswerWithTrue" classname="remoteTestingDocker.DockerValidation.AppTest" time="0.005"/>
+  <testcase name="shouldAnswerWithTrue" classname="remoteTestingDocker.DockerValidation.AppTest" time="0.005"/>
+  <testcase name="shouldAnswerWithTrue" classname="remoteTestingDocker.DockerValidation.AppTest" time="0.005"/>
+  <testcase name="verifygooglepage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="4.323"/>
+  <testcase name="verifygooglepage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="0.013"/>
+  <testcase name="verifygooglepage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="2.771"/>
+  <testcase name="verifyfacebookpage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="4.53">
+    <failure message="expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]
+	at remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage(Googlepage.java:21)
+]]></failure>
+  </testcase>
+  <testcase name="verifyfacebookpage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="4.53">
+    <failure message="expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]
+	at remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage(Googlepage.java:21)
+]]></failure>
+  </testcase>
+  <testcase name="verifyfacebookpage" classname="remoteTestingDocker.DockerValidation.Googlepage" time="5.955">
+    <failure message="expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Facebook - log in or sign up] but found [Facebook – log in or sign up]
+	at remoteTestingDocker.DockerValidation.Googlepage.verifyfacebookpage(Googlepage.java:21)
+]]></failure>
+  </testcase>
 </testsuite>

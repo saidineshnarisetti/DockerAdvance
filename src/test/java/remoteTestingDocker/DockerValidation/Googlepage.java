@@ -14,11 +14,11 @@ public class Googlepage extends LaunchBrowser{
 		System.out.println(driver.getTitle());
 		Thread.sleep(5000);
 	}
-	@Test(priority=2)
+	@Test(priority = 2, dependsOnMethods = "verifygooglepage")
 	public void verifyfacebookpage() throws InterruptedException{
 		Thread.sleep(5000);
 		driver.get("https://www.facebook.com/");
-		Assert.assertEquals(driver.getTitle(), "Facebook – log in or sign up");
+		Assert.assertEquals(driver.getTitle(), "Facebook - log in or sign up");
 		System.out.println(driver.getTitle());
 	}
 }
