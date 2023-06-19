@@ -1,37 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" parallel="tests" name="Edge testing(failed)" verbose="0">
-    <parameter name="browser" value="Edge"/>
-    <classes>
-      <class name="remoteTestingDocker.DockerValidation.Googlepage">
-        <methods>
-          <include name="verifygooglepage"/>
-          <include name="verifyfacebookpage"/>
-          <include name="opendriver"/>
-        </methods>
-      </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
-    </classes>
-  </test> <!-- Edge testing(failed) -->
-  <test thread-count="5" parallel="tests" name="Chrome testing(failed)" verbose="0">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="remoteTestingDocker.DockerValidation.Googlepage">
-        <methods>
-          <include name="verifygooglepage"/>
-          <include name="verifyfacebookpage"/>
-          <include name="opendriver"/>
-        </methods>
-      </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
-    </classes>
-  </test> <!-- Chrome testing(failed) -->
   <test thread-count="5" parallel="tests" name="FireFox testing(failed)" verbose="0">
     <parameter name="browser" value="Firefox"/>
     <classes>
       <class name="remoteTestingDocker.DockerValidation.Googlepage">
         <methods>
           <include name="verifygooglepage"/>
-          <include name="verifyfacebookpage"/>
           <include name="opendriver"/>
         </methods>
       </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->

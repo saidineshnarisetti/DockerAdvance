@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="remoteTestingDocker.DockerValidation.Googlepage" class="method navigator-link" hash-for-method="verifygooglepage">verifygooglepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,32 +128,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="remoteTestingDocker.DockerValidation.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue">shouldAnswerWithTrue</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="remoteTestingDocker.DockerValidation.Googlepage" class="method navigator-link" hash-for-method="verifyfacebookpage">verifyfacebookpage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="remoteTestingDocker.DockerValidation.Googlepage" class="method navigator-link" hash-for-method="verifyfacebookpage">verifyfacebookpage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="remoteTestingDocker.DockerValidation.Googlepage" class="method navigator-link" hash-for-method="verifyfacebookpage">verifyfacebookpage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="remoteTestingDocker.DockerValidation.Googlepage" class="method navigator-link" hash-for-method="verifygooglepage">verifygooglepage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="remoteTestingDocker.DockerValidation.Googlepage" class="method navigator-link" hash-for-method="verifygooglepage">verifygooglepage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,6 +153,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">remoteTestingDocker.DockerValidation.Googlepage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifygooglepage">
+                  </a> <!-- verifygooglepage -->
+                  <span class="method-name">verifygooglepage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Google] but found [Facebook – log in or sign up]
+	at remoteTestingDocker.DockerValidation.Googlepage.verifygooglepage(Googlepage.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -181,27 +199,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyfacebookpage">
-                  </a> <!-- verifyfacebookpage -->
-                  <span class="method-name">verifyfacebookpage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifygooglepage">
-                  </a> <!-- verifygooglepage -->
-                  <span class="method-name">verifygooglepage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifygooglepage">
-                  </a> <!-- verifygooglepage -->
-                  <span class="method-name">verifygooglepage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifygooglepage">
                   </a> <!-- verifygooglepage -->
                   <span class="method-name">verifygooglepage</span>
@@ -215,13 +212,6 @@
               <span class="class-name">remoteTestingDocker.DockerValidation.AppTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldAnswerWithTrue">
-                  </a> <!-- shouldAnswerWithTrue -->
-                  <span class="method-name">shouldAnswerWithTrue</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="shouldAnswerWithTrue">
@@ -264,14 +254,6 @@
       &lt;class name=&quot;remoteTestingDocker.DockerValidation.AppTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FireFox testing --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Edge testing&quot; verbose=&quot;0&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;remoteTestingDocker.DockerValidation.LaunchBrowser&quot;/&gt;
-      &lt;class name=&quot;remoteTestingDocker.DockerValidation.Googlepage&quot;/&gt;
-      &lt;class name=&quot;remoteTestingDocker.DockerValidation.AppTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Edge testing --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -287,9 +269,6 @@
               </li>
               <li>
                 <span class="test-name">FireFox testing (3 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Edge testing (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -315,48 +294,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifygooglepage')
+data.setCell(0, 1, 'verifyfacebookpage')
 data.setCell(0, 2, 'remoteTestingDocker.DockerValidation.Googlepage')
-data.setCell(0, 3, 27934);
+data.setCell(0, 3, 4601);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifygooglepage')
 data.setCell(1, 2, 'remoteTestingDocker.DockerValidation.Googlepage')
-data.setCell(1, 3, 24930);
+data.setCell(1, 3, 3568);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyfacebookpage')
+data.setCell(2, 1, 'verifygooglepage')
 data.setCell(2, 2, 'remoteTestingDocker.DockerValidation.Googlepage')
-data.setCell(2, 3, 5324);
+data.setCell(2, 3, 2323);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyfacebookpage')
 data.setCell(3, 2, 'remoteTestingDocker.DockerValidation.Googlepage')
-data.setCell(3, 3, 5191);
+data.setCell(3, 3, 1813);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyfacebookpage')
-data.setCell(4, 2, 'remoteTestingDocker.DockerValidation.Googlepage')
-data.setCell(4, 3, 4923);
+data.setCell(4, 1, 'shouldAnswerWithTrue')
+data.setCell(4, 2, 'remoteTestingDocker.DockerValidation.AppTest')
+data.setCell(4, 3, 4);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifygooglepage')
-data.setCell(5, 2, 'remoteTestingDocker.DockerValidation.Googlepage')
-data.setCell(5, 3, 4374);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'shouldAnswerWithTrue')
-data.setCell(6, 2, 'remoteTestingDocker.DockerValidation.AppTest')
-data.setCell(6, 3, 6);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'shouldAnswerWithTrue')
-data.setCell(7, 2, 'remoteTestingDocker.DockerValidation.AppTest')
-data.setCell(7, 3, 6);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'shouldAnswerWithTrue')
-data.setCell(8, 2, 'remoteTestingDocker.DockerValidation.AppTest')
-data.setCell(8, 3, 6);
+data.setCell(5, 1, 'shouldAnswerWithTrue')
+data.setCell(5, 2, 'remoteTestingDocker.DockerValidation.AppTest')
+data.setCell(5, 3, 4);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -391,48 +358,34 @@ return data;
                 <span class="method-name">shouldAnswerWithTrue</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">shouldAnswerWithTrue</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">remoteTestingDocker.DockerValidation.Googlepage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">opendriver(Chrome)</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-start">6 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">opendriver(Firefox)</span>
-                <span class="method-start">9 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">opendriver(Edge)</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-start">6 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifygooglepage</span>
-                <span class="method-start">14164 ms</span>
+                <span class="method-start">1772 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">verifyfacebookpage</span>
+                <span class="method-start">4095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifygooglepage</span>
-                <span class="method-start">17338 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifygooglepage</span>
-                <span class="method-start">37996 ms</span>
+                <span class="method-start">5084 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyfacebookpage</span>
-                <span class="method-start">42102 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyfacebookpage</span>
-                <span class="method-start">42269 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyfacebookpage</span>
-                <span class="method-start">42371 ms</span>
+                <span class="method-start">8656 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
