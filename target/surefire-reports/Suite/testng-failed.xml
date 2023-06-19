@@ -7,9 +7,22 @@
       <class name="remoteTestingDocker.DockerValidation.Googlepage">
         <methods>
           <include name="verifygooglepage"/>
+          <include name="verifyfacebookpage"/>
           <include name="opendriver"/>
         </methods>
       </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
     </classes>
   </test> <!-- FireFox testing(failed) -->
+  <test thread-count="5" parallel="tests" name="Chrome testing(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="remoteTestingDocker.DockerValidation.Googlepage">
+        <methods>
+          <include name="verifygooglepage"/>
+          <include name="verifyfacebookpage"/>
+          <include name="opendriver"/>
+        </methods>
+      </class> <!-- remoteTestingDocker.DockerValidation.Googlepage -->
+    </classes>
+  </test> <!-- Chrome testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->
